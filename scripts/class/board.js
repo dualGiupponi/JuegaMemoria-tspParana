@@ -101,8 +101,8 @@ class Board {
                     reference[1].changeState();
 
                     //Marco como que es correcta la selección
-                    reference[0].Card.children[0].children[0].src = '../../img/check-verde.png';
-                    reference[1].Card.children[0].children[0].src = '../../img/check-verde.png';
+                    reference[0].Card.children[0].children[0].src = './img/check-verde.png';
+                    reference[1].Card.children[0].children[0].src = './img/check-verde.png';
 
                     reference[0].enabledChange = false; //Si ya fue seleccionado y es correcto, no es necesario volver a cambiarlo
                     reference[1].enabledChange = false; //Si ya fue seleccionado y es correcto, no es necesario volver a cambiarlo
@@ -120,14 +120,14 @@ class Board {
                 reference[1].enabledChange = false; //Para que no vuelva a generar el envío
 
                 //Marco el error
-                reference[0].Card.children[0].children[0].src = '../../img/error-rojo.png'
-                reference[1].Card.children[0].children[0].src = '../../img/error-rojo.png'
+                reference[0].Card.children[0].children[0].src = './img/error-rojo.png'
+                reference[1].Card.children[0].children[0].src = './img/error-rojo.png'
 
             },500)
             setTimeout(()=>{
                 //La devuelvo al estado original
-                reference[0].Card.children[0].children[0].src = '../../img/Pregunta.png'
-                reference[1].Card.children[0].children[0].src = '../../img/Pregunta.png'
+                reference[0].Card.children[0].children[0].src = './img/Pregunta.png'
+                reference[1].Card.children[0].children[0].src = './img/Pregunta.png'
                 reference[0].enabledChange = true; //Para volver todo a la normalidad
                 reference[1].enabledChange = true; //Para volver todo a la normalidad
             },1300) 
